@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Counter</title>
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <div class="min-h-screen flex items-center justify-center">
+    <div class="max-w-lg w-full bg-white p-8 rounded-lg shadow-md">
+      <h1 class="text-2xl font-bold mb-6">Word Counter</h1>
+      <textarea id="input-text" rows="5" class="w-full border border-gray-300 p-2 mb-4" placeholder="Type or paste your text here"></textarea>
+      
+      <div class="flex items-center justify-between mb-4">
+       
+        <button id="count-words-btn" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Count Words</button>
+        <button id="reset-btn" class="bg-gray-400 hover:bg-gray-500 text-white py-2 px-4 rounded">Reset</button>
+      </div>
+      <div id="word-count-info" class="text-lg font-semibold mb-2"></div>
+      <div id="character-count-info" class="text-lg mb-2"></div>
+      <div id="time-to-read-info" class="text-lg mb-2"></div>
+      <div id="translated-text" class="text-lg mb-4"></div>
+      <div id="repeated-words-info" class="mb-4"></div>
+    </div>
+  </div>
+
+ <script src="./script.js"></script>
+</body>
+</html>
